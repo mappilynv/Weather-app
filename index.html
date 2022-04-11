@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- A page with a heading and sections separating your content -->
+    <div id="bodyBackground">
+        <div class="weatherCard">
+            <div clas="searchContainer">
+                <input type="text" id="searchBox">
+                <button id="searchButton"><img src="searchicon.png" id = "searchIcon" alt="search icon"></button>
+            </div>
+            <div class="timeBox">
+                <div class="time" id="time">
+                    09:14 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Sunday, 10 April 2022
+                </div>
+            </div>
+            <h1 id="city">Weather in Charlotte</h1>
+            <div class = weatherContainer>
+                <div class = "weatherBox1">
+                    <div class="temp">
+                        <h1 id="normalTemp">50°F</h1>
+                        <div id="feelsLike">Feels like 50°F</div>
+                        <div id="otherTemp">
+                            <div id="highLowTemp">
+                                <div id="highTemp">60°F/</div>
+                                <div> / </div>
+                                <div id="lowTemp">  50°F</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="" alt="weather icon image" id="weatherIcon"  >
+                </div>
+                <div class = "weatherBox2">
+                    <div id="weatherDescription">Sunny</div>
+                    <div id="humidity">Humidity: 30%</div>
+                    <div id="wind"> Wind speed: 26 mph</div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
